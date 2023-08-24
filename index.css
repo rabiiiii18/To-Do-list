@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #153577, #4e085f);
+}
+.image {
+  width: 30px;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.box h3 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box h3 img {
+  width: 30px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  /* margin: 30px; */
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+button {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  background: #f83a25;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+button:hover{
+    background: #ff6554;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 20%;
+  background-image: url(image/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(image/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: #edeef0;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* other flex properties */
+}
+
+.flex-child.hidden {
+  
+  font-size: 14px;
+  display: none;
+
+}

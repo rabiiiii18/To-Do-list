@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DoList</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>To-DoList <img class="image" src="image/icon.png" alt="" srcset=""></h3>
+            <div class="row">
+                <input type="text" id="your_text" placeholder="Add your text here.....">
+                <button onclick="AddItem()">Add</button>
+            </div>
+            <div class="containers">
+                <span class="flex-child hidden">You must write something!</span>
+            </div>
+
+            <ul id="list_container">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
